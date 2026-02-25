@@ -61,7 +61,9 @@ dropdowns.forEach((dropdown) => {
   }
 
   if (dropdown.classList.contains("-open")) {
-    openDropdown();
+    setTimeout(() => {
+      openDropdown();
+    }, 100);
   } else {
     closeDropdown();
   }
